@@ -9,7 +9,6 @@
     "build": "npx prisma generate && tsc",
     "start": "node dist/server.js"
   },
-  "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
