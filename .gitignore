@@ -1,0 +1,4 @@
+node_modules
+# Keep environment variables out of version control
+.env
+devbills-12ac3-firebase-adminsdk-fbsvc-58da239080.json
