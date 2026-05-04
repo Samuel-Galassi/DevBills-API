@@ -11,8 +11,12 @@ const app: FastifyInstance = Fastify({
 });
 
 app.register(cors, {
-  origin: true,
-  methods:["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
+  origin: [
+    "http://localhost:5173",
+    "https://interface-dev-bills-tau.vercel.app"
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
+  credentials: true,
 })
 
 app.register(routes, { prefix: "/api" });
